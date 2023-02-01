@@ -1,0 +1,46 @@
+.app {
+  padding: 100px 10px;
+}
+// 전역적으로 쓰일 위 아래 padding
+
+.section {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.app {
+  text-align: center;
+}
+
+.login {
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    word-wrap: break-word;
+  }
+  .inputBox {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.chats {
+}
