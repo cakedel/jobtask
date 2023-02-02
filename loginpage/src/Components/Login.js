@@ -29,20 +29,29 @@ const StyledInput = styled.input`
 const Login = () => {
   const [input, setInput] = useState({
     email: "",
-    pass: "",
+    password: "",
   });
+  // 입력되는 값을 관리하는 useState 생성
+
+  const { email, password } = input;
+ // email, password 비구조화 할당
+
   const onChange = (e) => {
+    const { value, name } = e.target;
     setInput({
-      [e.target.name]: e.target.value,
+      ...input,
+      [name]: value,
     });
   };
+  // input tag의 값이 바뀔 때 input의 상태를 바꿔주는 onChange 함수 생성
 
   const onReset = () => {
     setInput({
       email: "",
-      pass: "",
+      password: "",
     });
   };
+  // input을 클릭 할 때 입력되는 값 input을 비우도록 설정.
 
   return (
     <section className="login section">
@@ -53,16 +62,18 @@ const Login = () => {
       </p>
       <div className="inputBox">
         <StyledInput
+          type="text"
           name="email"
           placeholder="Email or phone number"
-          value={input}
+          value={email}
           onChange={onChange}
           onClick={onReset}
         />
         <StyledInput
-          name="pass"
+          type="text"
+          name="password"
           placeholder="Password"
-          value={input}
+          value={password}
           onChange={onChange}
           onClick={onReset}
         />

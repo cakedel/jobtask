@@ -1,10 +1,10 @@
 .app {
-  padding: 100px 10px;
+  padding: 0px 10px;
 }
 // 전역적으로 쓰일 위 아래 padding
 
 .section {
-  width: 500px;
+  width: 470px;
   margin: 0 auto;
 }
 
@@ -13,6 +13,7 @@
 }
 
 .login {
+  padding: 100px 0px;
   h2 {
     margin-bottom: 30px;
     text-align: center;
@@ -23,7 +24,7 @@
   p {
     margin-bottom: 50px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #777;
     word-wrap: break-word;
   }
@@ -41,6 +42,66 @@
     margin-bottom: 30px;
   }
 }
-
-.chats {
+.main {
+  padding: 30px 0;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
+      font-size: 30px;
+      align-items: center;
+    }
+  }
+  .contents {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 15px;
+    align-items: center;
+    .chatIcon {
+      font-size: 60px;
+      display: table;
+      svg {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .chatBox {
+     display: grid;
+     grid-template-columns: 9fr 1fr;
+     grid-row-gap: 10px;
+     align-items: center;
+      h3 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        text-align: left;
+        color: #999;
+        font-size: 15px;
+      }
+      .message {
+        margin: 0 auto;
+        width: 25px;
+        height: 25px;
+        background: rgb(255, 78, 34);
+        border-radius: 50%;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        strong {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
 }

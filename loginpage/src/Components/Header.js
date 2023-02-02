@@ -1,16 +1,20 @@
 import React from "react";
-import {BiSearch} from "react-icons/bi";
-import {RiChatNewLine} from "react-icons/ri";
+import { BiSearch } from "react-icons/bi";
+import { RiChatNewLine } from "react-icons/ri";
+import { HiOutlineMusicNote } from "react-icons/hi";
+import { IoSettingsOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <section className="chats section">
+    <div className="header">
       <h2>Chats</h2>
       <div className="menu">
         <BiSearch />
-        <RiChatNewLine/>
+        <RiChatNewLine />
+        <HiOutlineMusicNote />
+        <IoSettingsOutline />
       </div>
-    </section>
+    </div>
   );
 };
 
