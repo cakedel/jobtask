@@ -6,7 +6,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header app">
       <h2>Chats</h2>
       <div className="menu">
         <BiSearch />

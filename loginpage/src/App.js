@@ -5,7 +5,7 @@ import Main from "../src/Components/Main";
 
 const App = () => {
   return (
-    <div className="app">
+    <div>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/main" element={<Main />} />

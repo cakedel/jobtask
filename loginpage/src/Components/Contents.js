@@ -3,7 +3,7 @@ import { SiKakaotalk } from "react-icons/si";
 
 const Contents = () => {
   return (
-    <div className="contents">
+    <div className="contents app">
       <div className="chatIcon">
         <SiKakaotalk />
       </div>
